@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.side-nav {
+  background-color: #f0f1f2;
+  padding: 16px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: inline-block;
+  margin-top: 40px;
+  /* to position arrow */
+  position: relative;
+}
+
+.list-item {
+  margin-bottom: 8px;
+  border-radius: 10px;
+  /* center links */
+  text-align: center;
+}
+
+.list-item:hover {
+  background-color: #e1e2e3;
+}
+
+.list-item.active {
+  background-color: #e1e2e3;
+}
+
+.nav-link {
+  color: #115d8c;
+  padding: 16px;
+  display: inline-block;
+}
+
+.nav-text {
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 16px;
+  padding-right: 56px;
+  display: none;
+}
+
+.nav-icon {
+  font-size: 1.1em;
+}
+
+.horizontal-line {
+  margin: 16px 0;
+  height: 1px;
+  background-color: #e1e2e3;
+  border: none;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-image: url("./profile-pic.jpg");
+  background-size: cover;
+}
+
+.profile-info {
+  margin-left: 12px;
+  display: none;
+}
+
+.profile-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #5c5c5c;
+}
+
+.profile-description {
+  font-size: 11px;
+  color: #8f9aa0;
+}
+
+.arrow-btn {
+  padding: 8px;
+  background-color: #115d8c;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -40px;
+  margin-top: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-icon {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* opened sidebar */
+.side-nav.opened .nav-text {
+  display: inline-block;
+}
+
+.side-nav.opened .list-item {
+  text-align: left;
+}
+
+.side-nav.opened .nav-icon {
+  vertical-align: middle;
+}
+
+.side-nav.opened .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.side-nav.opened .profile-info {
+  display: block;
+}
+
+.side-nav.opened .profile-container {
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expandable navigation menu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside id="side-nav" class="side-nav">
+      <!-- arrow -->
+      <button id="arrow-btn" class="arrow-btn">
+        <i class="fas fa-angle-double-right arrow-icon"></i>
+      </button>
 
-</body>
+      <!-- content -->
+      <ul>
+        <li class="list-item active">
+          <a href="#" class="nav-link">
+            <i class="fas fa-home nav-icon"></i>
+            <p class="nav-text">Home</p>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-user-circle nav-icon"></i>
+            <p class="nav-text">Profile</p>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-pen-fancy nav-icon"></i>
+            <p class="nav-text">Blog</p>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-cog nav-icon"></i>
+            <p class="nav-text">Settings</p>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-sign-out-alt nav-icon"></i>
+            <p class="nav-text">Sign out</p>
+          </a>
+        </li>
+      </ul>
+
+      <hr class="horizontal-line" />
+
+      <div class="profile-container">
+        <div class="profile-circle"></div>
+        <div class="profile-info">
+          <p class="profile-name">Ahlam Karkashan</p>
+          <p class="profile-description">Frontend developer</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- js -->
+    <script src="./main.js"></script>
+  </body>
 </html>
